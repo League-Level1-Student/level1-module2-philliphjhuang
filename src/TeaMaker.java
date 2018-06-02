@@ -1,10 +1,28 @@
+
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 1
  */
 
 public class TeaMaker {
+	public static void main(String[] args) {
 
+		TeaBag TB = new TeaBag(TeaBag.MINT);
+		Kettle K = new Kettle();
+
+		K.boil();
+		Cup C = new Cup();
+
+		C.makeTea(TB, K.getWater());
+
+
+
+
+
+
+
+		}
 	/* Figure out how to make a cup of tea using the classes below */
 
 }
@@ -63,6 +81,7 @@ class Cup {
 			System.out.println("Can't make tea with cold water! ");
 	}
 
+
+//////////////////////////////////////
+
 }
-
-
