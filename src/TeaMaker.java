@@ -80,8 +80,4 @@ class Cup {
 		else
 			System.out.println("Can't make tea with cold water! ");
 	}
-
-
-//////////////////////////////////////
-
 }

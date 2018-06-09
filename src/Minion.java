@@ -5,6 +5,8 @@ public class Minion {
 		this.eyes=eyes;
 		this.color=color;
 		this.master=master;
+		
+
 	}
 	private String name; 
 	private int eyes; 
@@ -13,11 +15,22 @@ public class Minion {
 	
 	
 	
-	public static void main(String[] args) {
-	MinionTest MT = new MinionTest();
-	MT.testConstructor();
-	MT.testSetters();
-		
+	
+	
+	public String getName() {
+		return name;
+	}
+	public int getEyes() {
+		return eyes;
+	}
+	public String getColor() {
+		return color;
+	}
+	public String getMaster() {
+		return master;
+	}
+    public void setMaster(String master) {
+		this.master=master;
 		
 	}
 }
