@@ -1,37 +1,20 @@
+import java.util.Random;
 
 public class Vault {
 
-	public boolean code(boolean isOpen, int number) {
-		boolean password;
-		
-		
-		if(number==0) {
-			isOpen=true;
-	
-			
-		} else {
-			isOpen=false;
-		
-		}
-		
-		
-		
-		password=(isOpen);
-		
-		
-		
-		return password;
-		
-		
-		
-		
-		
-		
-		
+	boolean isRight;
+	int code = 0;
+
+	public Vault() {
+		this.code = new Random().nextInt(1000001);
+
 	}
-	
-	
-	private boolean code;
-	
-	
+
+	public boolean tryCode(int input) {
+		if (code == input) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 }
